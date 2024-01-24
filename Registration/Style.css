@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(100deg,#5D3587, #FFD1E3);
+}
+
+.container{
+    max-width: 700px ;
+    width: 100%;
+    
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    color: #fff;
+}
+
+.container .title::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 30px;
+    background: linear-gradient(120deg, #8085dc, #3C0753);
+}
+
+.container form .user-details{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: #fff;
+    border-radius: 10px;
+
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+
+}
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 30px ;
+    width: 100%;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding-left: 5px;
+    
+}
+
+.user-details .input-box label{
+    color: #fff;
+    
+}
+.user-details .input-box input:focus, .user-details .input-box input:valid{
+    border-color: #8085dc;
+
+}
+
+.user-details .category select {
+    height: 30px; 
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    padding-left: 5px;
+    background-color:#F4EEE0;
+    
+    
+}
+
+.user-details .category option {   
+    font-size:14px;
+    
+    
+    
+}
+
+.user-details .category select {   
+    background-color:#F4EEE0;
+    border-radius: 9px;
+    
+    
+    
+}
+
+
+
+.container .user-details .button input {
+    height: 30px;
+    padding: 5px; 
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    padding-left: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    background-color:#F4EEE0;
+    border-radius: 5px;
+    
+
+}
+
+
+
+
